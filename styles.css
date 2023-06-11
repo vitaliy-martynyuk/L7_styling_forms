@@ -1,1 +1,137 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, main, body {
+  height: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback-form {
+  height: 200px;
+  width: 350px;
+}
+.feedback-form-fieldset {
+  padding: 40px 30px;
+  position: relative;
+  border-radius: 8px;
+}
+.feedback-form-legend {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #eee;
+  padding: 5px 10px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-style: italic;
+}
+.feedback-form-username-wrapper, .feedback-form-message-wrapper, .feedback-form-select-wrapper, .feedback-form-date-wrapper {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.feedback-form-username-label, .feedback-form-message-label, .feedback-form-select-label, .feedback-form-date-label {
+  cursor: pointer;
+  width: 30%;
+  padding: 5px 10px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-right: none;
+  background-color: #eee;
+}
+.feedback-form-username-input, .feedback-form-message-input, .feedback-form-select-input, .feedback-form-date-input {
+  width: 70%;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-left: none;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-right: 5px;
+  padding-left: 5px;
+  transition-duration: 500ms;
+  transition-property: background-color;
+  resize: none;
+}
+.feedback-form-username-input:focus, .feedback-form-message-input:focus, .feedback-form-select-input:focus, .feedback-form-date-input:focus {
+  outline: 1px dashed black;
+}
+.feedback-form-username-input:hover:not(:focus), .feedback-form-message-input:hover:not(:focus), .feedback-form-select-input:hover:not(:focus), .feedback-form-date-input:hover:not(:focus) {
+  cursor: text;
+  background-color: #eee;
+}
+.feedback-form-username-input::-moz-placeholder, .feedback-form-message-input::-moz-placeholder, .feedback-form-select-input::-moz-placeholder, .feedback-form-date-input::-moz-placeholder {
+  font-style: italic;
+}
+.feedback-form-username-input::placeholder, .feedback-form-message-input::placeholder, .feedback-form-select-input::placeholder, .feedback-form-date-input::placeholder {
+  font-style: italic;
+}
+.feedback-form-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.feedback-form-checkbox-input {
+  width: 15px;
+  height: 15px;
+}
+.feedback-form-select-wrapper option {
+  background-color: #eee;
+  font-style: italic;
+}
+.feedback-form-range-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.feedback-form-range-input {
+  overflow: hidden;
+  width: 80px;
+  -webkit-appearance: none;
+  background-color: #9a905d;
+}
+.feedback-form-range-input::-webkit-slider-runnable-track {
+  height: 10px;
+  -webkit-appearance: none;
+  color: #13bba4;
+  margin-top: -1px;
+}
+.feedback-form-range-input::-webkit-slider-thumb {
+  width: 10px;
+  -webkit-appearance: none;
+  height: 10px;
+  cursor: ew-resize;
+  background: #434343;
+  box-shadow: -80px 0 0 80px #43e5f7;
+}
+.feedback-form-button {
+  transition-duration: 500ms;
+  cursor: pointer;
+  border: unset;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 30px;
+  background-color: #eee;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.feedback-form-button:hover {
+  background-color: #ccc;
+}/*# sourceMappingURL=styles.css.map */

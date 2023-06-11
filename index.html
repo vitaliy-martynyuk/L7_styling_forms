@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <form class="feedback-form">
+        <fieldset class="feedback-form-fieldset">
+          <legend class="feedback-form-legend">Feedback</legend>
+          <div class="feedback-form-username-wrapper">
+            <label for="username" class="feedback-form-username-label">
+              Username
+            </label>
+            <input
+              id="username"
+              class="feedback-form-username-input"
+              placeholder="Type..."
+            />
+          </div>
+          <div class="feedback-form-message-wrapper">
+            <label for="message" class="feedback-form-message-label">
+              Message
+            </label>
+            <textarea
+              id="message"
+              placeholder="Type..."
+              class="feedback-form-message-input"
+              rows="6"
+            ></textarea>
+          </div>
+          <div class="feedback-form-select-wrapper">
+            <label for="value" class="feedback-form-select-label">
+              Value
+            </label>
+            <select id="value" class="feedback-form-select-input">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+          <div class="feedback-form-date-wrapper">
+            <label for="date" class="feedback-form-date-label">Date</label>
+            <input id="date" class="feedback-form-date-input" type="date" />
+          </div>
+          <div class="feedback-form-range-wrapper">
+            <label for="range" class="feedback-form-range-label">Range</label>
+            <input id="range" type="radio" style="accent-color: red" />
+          </div>
+          <div class="feedback-form-checkbox-wrapper">
+            <label for="tos" class="feedback-form-checkbox-label">
+              I agree to ToS
+            </label>
+            <input
+              id="tos"
+              type="checkbox"
+              class="feedback-form-checkbox-input"
+            />
+          </div>
+          <button type="button" class="feedback-form-button">Submit</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
